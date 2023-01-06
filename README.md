@@ -12,10 +12,13 @@
 </p>
 
 # How does it work?
+
 It boots the device with multiple patches required. On first run, it'll boot a ramdisk which dumps your onboard blob, creates a fakefs (if using semi tethered), installs the loader app, and patches your kernel.
 
 # Issues
+
 ### Need help?
+
 If you need help, **please** join our Discord. We disabled issues due to the flood of spam, and difficulty to respond in general. We are much more comfortable on Discord.
 
 Please, please, please, provide necessary info:
@@ -42,17 +45,20 @@ Thank you so much to our Patreons that make the future development possible! You
 <a href="https://github.com/beast9265"><img width=64 src="https://avatars.githubusercontent.com/u/79794946?v=4"></img></a>
 
 # Warning
+
 - We are **NOT** responsible for any data loss. The user of this program accepts responsibility should something happen to their device. While nothing should happen, jailbreaking has risks in itself. **If your device is stuck in recovery, please run one of the following:**
-   - futurerestore --exit-recovery
-   - irecovery -n
+  - futurerestore --exit-recovery
+  - irecovery -n
 
 # Prerequisites
+
 - A checkm8 vulnerable iOS device on iOS 15 or 16 (A8-A11)
   - The device must be on iOS 15.0-16.2
 - Linux or macOS computer
   - Python 3 must be installed.
 
 ### A10 and A11 devices
+
 - On A10 and A11, **you must disable your passcode while in the jailbroken state**.
   - On iOS 16 A10+, if you EVER enabled a passcode on 16, you have to reset through the settings app/restore with a computer
   - On A10, this can be fixed in the future by implementing blackbird.
@@ -65,9 +71,11 @@ A tutorial can be found [here](https://ios.cfw.guide/installing-palera1n).
 # Repos
 
 ### Tweaks mode
+
 All repos work when using tweaks mode because it uses normal Procursus and not rootless.
 
-### Rootless 
+### Rootless
+
 Repos need to be updated for rootless, here are some that work currently:
 
 - [Mineek's repo](https://mineek.github.io/repo) contains rootless Procursus packages
@@ -78,18 +86,18 @@ If you want to make a rootless repo, use the official [palera1n repo](https://gi
 # Credits
 
 - [Nathan](https://github.com/verygenericname)
-    - The ramdisk that dumps blobs, copies files, and duplicates rootfs is a slimmed down version of [SSHRD_Script](https://github.com/verygenericname/SSHRD_Script)
-    - For modified [restored_external](https://github.com/verygenericname/sshrd_SSHRD_Script)
-    - Also helped Mineek getting the kernel up and running and with the patches
-    - Helping with adding multiple device support
-    - Fixing issues relating to camera.. etc by switching to fsboot
-    - [iBoot64Patcher fork](https://github.com/verygenericname/iBoot64Patcher)
+  - The ramdisk that dumps blobs, copies files, and duplicates rootfs is a slimmed down version of [SSHRD_Script](https://github.com/verygenericname/SSHRD_Script)
+  - For modified [restored_external](https://github.com/verygenericname/sshrd_SSHRD_Script)
+  - Also helped Mineek getting the kernel up and running and with the patches
+  - Helping with adding multiple device support
+  - Fixing issues relating to camera.. etc by switching to fsboot
+  - [iBoot64Patcher fork](https://github.com/verygenericname/iBoot64Patcher)
 - [Mineek](https://github.com/mineek)
-    - For the patching and booting commands
-    - Adding tweak support
-    - For patchfinders for RELEASE kernels
-    - [Kernel15Patcher](https://github.com/mineek/PongoOS/tree/iOS15/checkra1n/Kernel15Patcher)
-    - [Kernel64Patcher](https://github.com/mineek/Kernel64Patcher)
+  - For the patching and booting commands
+  - Adding tweak support
+  - For patchfinders for RELEASE kernels
+  - [Kernel15Patcher](https://github.com/mineek/PongoOS/tree/iOS15/checkra1n/Kernel15Patcher)
+  - [Kernel64Patcher](https://github.com/mineek/Kernel64Patcher)
 - [Amy](https://github.com/elihwyma) for the [Pogo](https://github.com/elihwyma/Pogo) app
 - [checkra1n](https://github.com/checkra1n) for the base of the kpf
 - [nyuszika7h](https://github.com/nyuszika7h) for the script to help get into DFU
@@ -98,7 +106,7 @@ If you want to make a rootless repo, use the official [palera1n repo](https://gi
 - [m1sta](https://github.com/m1stadev) for [pyimg4](https://github.com/m1stadev/PyIMG4)
 - [tihmstar](https://github.com/tihmstar) for [pzb](https://github.com/tihmstar/partialZipBrowser)/original [iBoot64Patcher](https://github.com/tihmstar/iBoot64Patcher)/original [liboffsetfinder64](https://github.com/tihmstar/liboffsetfinder64)/[img4tool](https://github.com/tihmstar/img4tool)
 - [Tom](https://github.com/guacaplushy) for a couple patches and bugfixes
-    - For maintaining [Kernel64Patcher](https://github.com/palera1n/Kernel64Patcher)
+  - For maintaining [Kernel64Patcher](https://github.com/palera1n/Kernel64Patcher)
 - [xerub](https://github.com/xerub) for [img4lib](https://github.com/xerub/img4lib) and [restored_external](https://github.com/xerub/sshrd) in the ramdisk
 - [Cryptic](https://github.com/Cryptiiiic) for [iBoot64Patcher](https://github.com/Cryptiiiic/iBoot64Patcher) fork, and [liboffsetfinder64](https://github.com/Cryptiiiic/liboffsetfinder64) fork
 - [libimobiledevice](https://github.com/libimobiledevice) for several tools used in this project (irecovery, ideviceenterrecovery etc), and [nikias](https://github.com/nikias) for keeping it up to date
